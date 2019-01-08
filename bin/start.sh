@@ -14,4 +14,4 @@ export CLASSPATH
 
 #${JAVA_HOME}/bin/java ${JAVA_OPTIONS}  -Dpackage.count=1 -Dcom.dc.esb.mock.path=./ -Dmock.classpath=./lib com.dc.esb.demo.SystemMockMain	 tellerGalaxy &
 
-${JAVA_HOME}/bin/java -jar ./lib/mock-0.0.1-SNAPSHOT.jar
+${JAVA_HOME}/bin/java -jar ../lib/mock-0.0.1-SNAPSHOT.jar

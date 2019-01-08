@@ -1,4 +1,4 @@
-package com.dcits.mock;
+package com.dcits.common;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,7 +22,10 @@ public class PropertyUtil {
         props = new Properties();
         InputStream in = null;
         try {
-            in = PropertyUtil.class.getClassLoader().getResourceAsStream("system_mock.properties");
+            StringBuffer sb = new StringBuffer(System.getProperty("user.dir"));
+            sb.append(File.separator).append("system_mock.properties");
+
+            in = new FileInputStream(new File(sb.toString()));
             props.load(in);
         } catch (FileNotFoundException e) {
             logger.error("jdbc.properties文件未找到");

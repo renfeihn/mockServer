@@ -34,7 +34,6 @@ public class MockController {
             StringBuffer sb = new StringBuffer(System.getProperty("user.dir"));
             sb.append(File.separator).append("response");
 
-//            String responsePath = MockController.class.getClassLoader().getResource("response").getPath();
             if (logger.isDebugEnabled()) {
                 logger.debug("responsePath :{}", sb.toString());
             }
